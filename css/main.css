@@ -1,61 +1,215 @@
-/*
-Error: File to import not found or unreadable: base.
-        on line 52 of /home/ubuntu/workspace/portfolio-example/css/main.scss
 
-47: 
-48: 
-49: 
-50: // Import partials from `sass_dir` (defaults to `_sass`)
-51: @import
-52:         "base",
-53:         "layout",
-54:         "syntax-highlighting",
-55: 		"components/gradient-bar",
-56: 		"components/post",
-57: 		"components/project",
+* {
+  box-sizing: border-box; }
 
-Backtrace:
-/home/ubuntu/workspace/portfolio-example/css/main.scss:52
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/import_node.rb:45:in `import'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/import_node.rb:28:in `imported_file'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/import_node.rb:37:in `css_import?'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/plugin.rb:82:in `update_stylesheets'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/exec/sass_scss.rb:364:in `watch_or_update'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/exec/base.rb:52:in `parse'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/lib/sass/exec/base.rb:19:in `parse!'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/gems/sass-3.4.18/bin/scss:13:in `<top (required)>'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/bin/scss:23:in `load'
-/usr/local/rvm/gems/ruby-2.1.5@rails4/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: base.\A         on line 52 of /home/ubuntu/workspace/portfolio-example/css/main.scss\A \A 47: \A 48: \A 49: \A 50: // Import partials from `sass_dir` (defaults to `_sass`)\A 51: @import\A 52:         \"base\",\A 53:         \"layout\",\A 54:         \"syntax-highlighting\",\A 55: 		\"components/gradient-bar\",\A 56: 		\"components/post\",\A 57: 		\"components/project\","; }
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+/* Basic styling */
+body {
+  font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333;
+  background-color: #fefef3;
+  -webkit-text-size-adjust: 100%; }
+
+/* Set `margin-bottom` to maintain vertical rhythm */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+.highlight {
+  margin-bottom: 10px; }
+
+/* Images */
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+/* Figures */
+figure > img {
+  display: block; }
+
+figcaption {
+  font-size: 14px; }
+
+/* Lists */
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  text-align: center; }
+
+.mega {
+  font-size: 100px; }
+
+h1, .h1 {
+  font-size: 70px; }
+
+h2, .h2 {
+  font-size: 40px; }
+
+h3, .h3 {
+  font-size: 30px; }
+
+h4, .h4 {
+  font-size: 24px; }
+
+/* Links */
+a {
+  color: #fe5f55;
+  text-decoration: none;
+  transition: 0.3s; }
+  a:hover {
+    color: #6b2339;
+    text-decoration: none; }
+
+/* Blockquotes */
+blockquote {
+  color: #333;
+  border-left: 4px solid #999999;
+  padding-left: 10px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+/* Code formatting */
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #999999;
+  border-radius: 3px;
+  background-color: #fff; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: scroll; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+/* Clearfix */
+.wrapper:after, .site-section:after, .post-list:after, .project-list:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Icons */
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; }
+  .icon > svg path {
+    fill: #333; }
+
+.site-header {
+  padding: 2em 0 0;
+  background: url("/images/header-bg2.png");
+  background-size: 400px 400px;
+  border-bottom: 1px solid #ccc;
+  text-align: center; }
+
+.site-nav {
+  text-align: center; }
+  .site-nav ul {
+    list-style: none; }
+  .site-nav li {
+    display: inline-block;
+    margin: 0 0.5em;
+    font-size: 1.875em; }
+
+.site-title a {
+  color: #333; }
+
+.site-section {
+  padding-top: 70px; }
+
+.site-section-last {
+  padding-bottom: 70px; }
+
+.site-footer {
+  padding: 2em 0;
+  color: #fff;
+  background: #333; }
+
+.footer-content {
+  float: left;
+  width: 40%;
+  font-size: 0.875em; }
+  .footer-content h3 {
+    text-align: left; }
+
+.footer-social {
+  float: right; }
+  .footer-social li {
+    display: inline-block;
+    margin: 0 0.5em; }
+
+.post-list {
+  list-style: none; }
+
+.post {
+  float: left;
+  width: 50%;
+  padding: 0 3em 1em; }
+
+.post-tags {
+  min-height: 50px;
+  text-align: center; }
+  .post-tags li {
+    display: inline; }
+
+.post-featured {
+  float: none;
+  margin: 0 auto; }
+
+.post-read-more-link {
+  text-align: center; }
+
+.post-header {
+  text-align: center; }
+
+.post-title {
+  margin: 0; }
+
+.post-meta {
+  color: #92b5bd;
+  font-size: 24px; }
+
+.post-body {
+  width: 90%;
+  max-width: 40em;
+  margin: 40px auto; }
+  .post-body h1, .post-body h2, .post-body h3, .post-body h4 {
+    max-width: 80%;
+    margin: 40px auto; }
+
+.project-list {
+  padding: 0;
+  list-style: none; }
+
+.project {
+  float: left;
+  width: 33.33%;
+  padding: 0 1em;
+  text-align: center; }
+
+.project-caption {
+  margin-top: 0.5em;
+  font-size: 30px; }
+
