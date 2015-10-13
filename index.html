@@ -4,7 +4,7 @@ layout: default
 
 <!---- Section for featured posts---->
 <section class="site-section">
-  <div class="wrapper">
+	<div class="wrapper">
 		<h1 class="page-heading">featured article</h1>
 		{% assign count = 0 %}
 		{% for post in site.categories['blog'] reverse %}
@@ -19,6 +19,16 @@ layout: default
 </section>
 
 <!---- Section for featured projects---->
+<section class="site-section">
+	<h1>featured projects</h1>
+	<ul class="project-list">
+		{% for project in site.categories['project'] | limit: 3 %}
+			{% include project.html %}
+		{% endfor %}
+	</ul>
+</section>
+	
+	
 <!---- Section for latest articles---->
 <section class="site-section site-section-last">
 	<div class="wrapper">
